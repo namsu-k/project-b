@@ -1,10 +1,10 @@
 body, header, footer, div,
-section, img, ul, li, p {
+section, img, ul, ol, li, p , a {
     margin : 0;
     padding : 0;
 }
 
-ul, li {
+ul, ol, li {
     list-style: none;
 }
 
@@ -39,4 +39,123 @@ footer {
     position : fixed;
     right : 0;
     bottom : 180px;
+}
+
+/* invite */
+
+.invite {
+    height: 750px;
+    background-color: #fff;
+}
+
+/* 대체 텍스트 */
+
+.blind {
+    position : absolute;
+    clip : rect(0 0 0 0);
+    width : 1px;
+    height : 1px;
+    margin : -1px;
+    overflow : hidden;
+}
+
+/* creator */
+
+.creator {
+    height : 822px;
+    background-color: #f9939d;
+}
+
+/* content section */
+
+.content section {
+    display : flex;
+    width : 100%;
+    max-width: 1920px;
+    overflow : hidden;
+    justify-content: center;
+}
+
+/* store */
+
+.store {
+    position : relative;
+    height : 1084px;
+    background-color: #d5e43f;
+}
+
+.store .item_wrap {
+    display : table;
+    position : absolute;
+    width : 980px;
+    height : 740px;
+    top : 27.5%;
+}
+
+.store .item_wrap li {
+    display : table-cell;
+}
+
+
+.store .item_wrap ul li + li {
+    padding-left: 20px;
+}
+
+.store .item_wrap .item_text {
+    width: 230px;
+    height : 107px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+    color: #1b1d21;
+    padding: 0 10px;
+    margin-top: 30px;
+}
+
+.store .item_wrap .item_text p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.store .item_wrap .item_text strong {
+    font-size: 28px;
+}
+
+.item_detail {
+    display: none;
+    background-color: rgba(96, 132, 2, 0.9);
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    text-align: center;
+}
+
+.item_link {
+    position: relative;
+    height: 230px;
+    background-color: #d5e43f;
+    border-radius:10px;
+    overflow: hidden;
+
+}
+
+.item_detail strong {
+    display: block;
+    margin-top: 57.5px;
+    font-size: 65px;
+    color: #fff;
+}
+
+.item_detail p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.item_link:hover .item_detail {
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+    overflow: hidden;
+    top: 0;
 }
