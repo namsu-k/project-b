@@ -1,4 +1,4 @@
-body, header, footer, div,
+html, body, header, footer, div,
 section, img, ul, ol, li, p , a {
     margin : 0;
     padding : 0;
@@ -8,8 +8,8 @@ ul, ol, li {
     list-style: none;
 }
 
-html {
-    font-family : '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif
+body {
+    font-family : '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
 }
 
 /* 상하단 디자인 */
@@ -178,6 +178,7 @@ footer {
     overflow: hidden;
     justify-content: center;
     align-items: center;
+    margin-top: 55px;
 }
 
 .recipe_all {
@@ -233,4 +234,79 @@ footer {
 .link_list a {
     display: block;
     height: 100%;
+}
+
+/* faq */
+
+.faq {
+    height: 100%;
+    margin: 100px 0;
+}
+
+.faq_list {
+    width: 960px;
+}
+
+.faq_list .item1 {
+    margin-top: 31px;
+}
+
+.faq_title {
+    display: block;
+    margin : 0 auto;
+}
+
+.q1, .q2, .q3, .q4, .q5 {
+    height: 78px;
+    font-size: 20px;
+    color: #1b1d21;
+    line-height: 28px;
+}
+
+.faq_item.item1{
+    border-top: 1px solid #a1a5ad;
+}
+
+.faq_item {
+    border-bottom: 1px solid #a1a5ad;
+}
+
+.faq_list .q_mark {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+.q_mark::after {
+    clear: both;
+    content: "";
+}
+
+.faq_list p {
+    display: inline;
+    clear: both;
+}
+
+.faq_list button {
+    display: block;
+    float: right;
+    border: 0;
+    background-color: #fff;
+    height: auto;
+    cursor: pointer;
+}
+
+.a1, .a2, .a3, .a4, .a5 {
+    display: none;
+    font-size: 16px;
+    color: #60656e;
+    line-height: 28px;
+    background-color: #f7f8fa;
+}
+.a1 img {
+    display: inline-block;
+}
+
+.a1 p {
+    display: inline-block;
 }
