@@ -256,57 +256,61 @@ footer {
     margin : 0 auto;
 }
 
-.q1, .q2, .q3, .q4, .q5 {
-    height: 78px;
-    font-size: 20px;
-    color: #1b1d21;
-    line-height: 28px;
+.faq_item {
+    border-bottom: 1px solid #a1a5ad;
+    height: 200px;
 }
 
 .faq_item.item1{
     border-top: 1px solid #a1a5ad;
 }
 
-.faq_item {
-    border-bottom: 1px solid #a1a5ad;
+.q1, .q2, .q3, .q4, .q5 {
+    position: relative;
+    font-size: 20px;
+    color: #1b1d21;
+    line-height: 28px;
+    height: 50%;
 }
 
 .faq_list .q_mark {
     display: block;
-    position: relative;
-    float: left;
-}
-
-.q_mark::after {
-    clear: both;
-    content: "";
+    position: absolute;
+    top: 40%;
+    left: 2.5%;
 }
 
 .faq_list p {
-    display: inline;
-    clear: both;
+    position: absolute;
+    top: 35%;
+    left: 6.5%;
+    width: 85%;
 }
 
 .faq_list button {
     display: block;
-    float: right;
     border: 0;
     background-color: #fff;
-    height: auto;
-    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    right: 2.5%;
 }
 
 .a1, .a2, .a3, .a4, .a5 {
-    display: none;
+    position: relative;
     font-size: 16px;
     color: #60656e;
     line-height: 28px;
     background-color: #f7f8fa;
+    height: 50%;
 }
-.a1 img {
-    display: inline-block;
+.faq_list .a_mark {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 2.5%
 }
 
 .a1 p {
-    display: inline-block;
+    display: block;
 }
